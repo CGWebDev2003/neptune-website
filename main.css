@@ -1,0 +1,15 @@
+/* Import header */
+@import url('./components/header/header.css');
+
+/* Import page */
+@import url('./components/page.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}

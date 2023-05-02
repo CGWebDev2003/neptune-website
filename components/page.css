@@ -1,0 +1,10 @@
+.main-content {
+    position: relative;
+    top: 7rem;
+    width: 90%;
+    max-width: 1500px;
+    min-height: 100vh;
+    background-color: var(--background-light);
+    box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.15);
+}
+

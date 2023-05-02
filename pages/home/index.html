@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Import jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <!-- Import Bootsrap icons -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+       
+       <!-- Import neptune ui -->
+       <link rel="stylesheet" href="http://cdn.neptunecss.org/neptune-css/v0.5.0/neptune.css">
+       
+        <!-- Import main CSS file -->
+        <link rel="stylesheet" href="../../main.css">
+        <link rel="stylesheet" href="./home.css">
+
+       <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+       <title>Home | Neptune - A free open-source CSS framework</title>
+    </head>
+    <body>
+        <script src="../../components/header/header.js"></script>
+        
+        <section class="hero-section" id="hero-section">
+            <div class="planet-box">
+                <div class="planet">
+                    <div class="cloud cloud-1">
+                        <div class="cloud-s" id="cloud-m-1"></div>
+                        <div class="cloud-m" id="cloud-s-1"></div>
+                    </div>
+
+                    <div class="cloud cloud-2">
+                        <div class="cloud-m" id="cloud-m-2"></div>
+                        <div class="cloud-s" id="cloud-s-2"></div>
+                    </div>
+
+                    <div class="cloud cloud-3">
+                        <div class="cloud-m" id="cloud-m-3"></div>
+                        <div class="cloud-s" id="cloud-s-3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="hero-headline headline-1">Neptune CSS</h1>
+            <p class="text-l">
+                Neptune is a lightweight CSS framework to build websites faster. You can use it for free becaus eits open source. Try it now!
+            </p>
+            <div class="install-box">
+                <!--<code class="npm-code" id="npm-code">
+                    npm install @neptune-css/neptune-css
+                </code>-->
+                <input type="text" name="npm-code" class="npm-code" id="npm-code" value="npm install @neptune-css/neptune">
+                <button class="copy-button button-primary" id="copy-button" onclick="copyCode()">
+                    <i class="bi bi-files"></i>
+                </button>
+                
+                <script>
+                    function delay(time) {
+                        return new Promise(resolve => setTimeout(resolve, time));
+                    }
+
+                    async function copyCode() {
+                        var copyText = document.getElementById("npm-code");
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999);
+                        navigator.clipboard.writeText(copyText.value);
+
+                        document.getElementById('copy-toast').style.display = 'flex';  
+                        document.getElementById('copy-toast').classList.add('toast-in'); 
+                        await delay(5000);
+                        document.getElementById('copy-toast').style.display = 'none';
+                        
+                        
+                        // document.getElementById('copy-toast').style.animation = 'toastOut 1s 0s forwards';  
+                        // document.getElementById('copy-toast').style.animation = '';  
+                      }
+                </script>
+            </div>
+            <div class="hero-button-box">
+                <button class="button-l button-cta start-button">
+                    <span class="button-icon">
+                        <i class="bi bi-rocket-takeoff-fill"></i>
+                    </span>
+                    Getting started
+                </button>
+                <button class="button-l button-secondary github-button" onclick="openGitHub()">
+                    <span class="button-icon">
+                        <i class="bi bi-github"></i>
+                    </span>
+                    Github
+                </button>
+                <script>
+                    function openGitHub() {
+                        window.location.href = 'https://github.com/neptune-css';
+                    }
+                </script>
+            </div>
+            <div class="toast toast-info toast-right-bottom" id="copy-toast">
+                <span class="toast-icon">
+                    <i class="bi bi-clipboard-check-fill"></i>
+                </span>
+                <p class="toast-text text-l">
+                    Copied to clipboard!
+                </p>
+            </div>
+        </section>
+
+        <section class="install-section">
+
+        </section>
+    </body>
+</html>
