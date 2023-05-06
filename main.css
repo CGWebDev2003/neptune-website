@@ -1,5 +1,9 @@
+/* Import components */
 /* Import header */
 @import url('./components/header/header.css');
+
+/* Import code block */
+@import url('./components/codeBlock/codeblock.css');
 
 /* Import page */
 @import url('./components/page.css');

@@ -1,0 +1,143 @@
+/* Setup code box */
+.code-box {
+    position: relative;
+    width: 600px;
+    max-width: 90%;
+    min-height: 10rem;
+    height: auto;
+    max-height: 50rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: -.5rem;
+}
+
+/* Setup code box header */
+.code-box > .code-box-header {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--white-60);
+    border-radius: var(--rounded-m) var(--rounded-m) 0 0;
+}
+
+/* Setup code box header navigation */
+.code-box-header > .navigation-box {
+    position: relative;
+    width: auto;
+    max-width: calc(100% - 6rem);
+    height: 100%;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .1rem;
+}
+
+/* Setup navigation tabs */
+.navigation-box > .tab-button {
+    position: relative;
+    width: auto;
+    max-width: 13rem;
+    height: 100%;
+    padding: 0 16px;
+    border-radius: 0;
+}
+
+.tab-button > .tab-icon {
+    font-size: 16px;
+}
+
+.tab-button > .html-icon { color: #e44d26;}
+.tab-button > .css-icon { color: #29a9df;}
+.tab-button > .sass-icon { color: #d479a5;}
+.tab-button > .scss-icon { color: #d479a5;}
+.tab-button > .js-icon { color: #f7df1e;}
+.tab-button > .php-icon { color: #8993be;}
+
+/* Setup code box header button-box */
+.code-box-header > .button-box {
+    position: relative;
+    width: auto;
+    max-width: 5.5rem;
+    height: 100%;
+}
+
+.code-box-header > .button-box > .code-box-controll-button {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+}
+
+/* Setup code box content */
+.code-box-content {
+    position: relative;
+    width: 100%;
+    min-height: 3rem;
+    height: auto;
+    max-height: 50rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid var(--white-60);
+    border-top: none;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+/* Setup code block */
+.code-box-content > pre {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+    border-radius: var(--edge) !important;
+    box-shadow: none !important;
+    background-color: white !important;
+}
+
+.code-box-content pre code {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+/* Setup code box footer */
+.code-box > .code-box-footer {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    border: 1px solid var(--white-60);
+    border-radius: 0 0 var(--rounded-m) var(--rounded-m);
+}
+
+.code-box-footer > .run-code-button {
+    position: relative;
+    margin-right: .2rem;
+    max-height: 90% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px !important;
+}
+
+.run-code-button > .button-icon {
+    position: relative;
+    margin-right: .15rem;
+    color: var(--text-button);
+    font-size: 18px !important;
+}
