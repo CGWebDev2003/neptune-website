@@ -1,4 +1,9 @@
-/* Setup code box */
+/**
+* @stylesheet codeblock.css Code Block
+*
+* Setup Code blocks and code samples with previews of the components.
+**/
+
 .code-box {
     position: relative;
     width: 600px;

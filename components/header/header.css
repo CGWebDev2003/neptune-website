@@ -1,3 +1,9 @@
+/**
+* @stylesheet header.css Header
+*
+* Setup the page header.
+**/
+
 header {
     position: fixed;
     top: 0;

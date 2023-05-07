@@ -1,3 +1,9 @@
+/**
+* @stylesheet main.css Main file
+*
+* Connect all the CSS files in a single main file..
+**/
+
 /* Import components */
 /* Import header */
 @import url('./components/header/header.css');

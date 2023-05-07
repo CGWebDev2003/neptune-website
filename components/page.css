@@ -1,3 +1,9 @@
+/**
+* @stylesheet page.css Main Content
+*
+* Setup Utils for the pages.
+**/
+
 .main-content {
     position: relative;
     top: 7rem;
